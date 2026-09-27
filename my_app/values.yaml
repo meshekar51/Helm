@@ -1,5 +1,5 @@
 # ---------- Deployment ----------
-replicaCount: 3
+replicaCount: 10
 
 image:
   repository: nginx
