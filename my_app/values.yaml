@@ -1,0 +1,15 @@
+# ---------- Deployment ----------
+replicaCount: 3
+
+image:
+  repository: nginx
+  tag: "1.14.2"          # leave "" to fall back to Chart.yaml appVersion
+  pullPolicy: IfNotPresent
+
+containerPort: 80
+
+# ---------- Service ----------
+service:
+  type: NodePort
+  port: 80               # port inside the cluster (ClusterIP)
+  nodePort: 30080        # port on every node; must be 30000-32767, remove to auto-assign
