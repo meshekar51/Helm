@@ -12,4 +12,4 @@ containerPort: 80
 service:
   type: NodePort
   port: 80               # port inside the cluster (ClusterIP)
-  nodePort: 30080        # port on every node; must be 30000-32767, remove to auto-assign
+  nodePort: 30082       # port on every node; must be 30000-32767, remove to auto-assign
